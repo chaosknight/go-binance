@@ -987,10 +987,10 @@ type WsBalance struct {
 type WsPosition struct {
 	Symbol                    string           `json:"s"`
 	Side                      PositionSideType `json:"ps"`
-	Amount                    string           `json:"pa"`
+	Amount                    JSONFloat64      `json:"pa"`
 	MarginType                MarginType       `json:"mt"`
 	IsolatedWallet            string           `json:"iw"`
-	EntryPrice                string           `json:"ep"`
+	EntryPrice                JSONFloat64      `json:"ep"`
 	MarkPrice                 string           `json:"mp"`
 	UnrealizedPnL             string           `json:"up"`
 	AccumulatedRealized       string           `json:"cr"`
