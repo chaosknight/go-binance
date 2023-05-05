@@ -110,11 +110,11 @@ type AccountPosition struct {
 	PositionInitialMargin  string           `json:"positionInitialMargin"`
 	Symbol                 string           `json:"symbol"`
 	UnrealizedProfit       string           `json:"unrealizedProfit"`
-	EntryPrice             string           `json:"entryPrice"`
+	EntryPrice             JSONFloat64      `json:"entryPrice"`
 	MaxNotional            string           `json:"maxNotional"`
 	PositionSide           PositionSideType `json:"positionSide"`
-	PositionAmt            string           `json:"positionAmt"`
+	PositionAmt            JSONFloat64      `json:"positionAmt"`
 	Notional               string           `json:"notional"`
 	IsolatedWallet         string           `json:"isolatedWallet"`
-	UpdateTime             int64            `json:"updateTime"`
+	UpdateTime             JSONTime         `json:"updateTime"`
 }
